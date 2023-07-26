@@ -1,0 +1,22 @@
+.page {
+  
+margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ background-color: #2A2C2F;
+ padding-top: 28px;
+ align-items: center;
+ font-family: "Inter", "Arial", "Helvetica", sans-serif;
+ 
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    padding-top: 16px;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
