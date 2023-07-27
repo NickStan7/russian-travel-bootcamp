@@ -1,0 +1,91 @@
+.place {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(284px, 1fr)); */
+
+  
+ 
+  grid-template-columns: 1fr 1fr; /* Создаем две колонки */
+  row-gap: 48px;
+  column-gap: 40px;
+  
+}
+
+
+@media screen and (max-width: 1024px) {
+  .place {
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .place {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .place {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    column-gap: 28px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .place {
+    grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
+  }
+}
+
+
+@media screen and (max-width: 595px) {
+  .place {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .place {
+    row-gap: 32px;
+  }
+}
+/*
+.place__website,
+.place__paragraphs {
+  grid-column: 2; /* Определяем колонку 2, чтобы поместить website и paragraph справа от image */
+
+  /*
+
+.place__paragraph:nth-of-type(2) {
+ grid-row: 2; /* Добавляем отступ между вторым и первым параграфами */
+
+
+/*
+/* Медиа-запрос для разрешения 320px *
+@media screen and (max-width: 320px) {
+  .place {
+    grid-template-columns: 1fr; /* Изменяем на одну колонку 
+    grid-template-rows: auto auto auto auto; /* Создаем четыре строки с автоматической высотой */
+    
+
+  /*
+  .place__title,
+  .place__image,
+  .place__website,
+  .place__paragraphs {
+    grid-column: auto; /* Сбрасываем заданные колонки, чтобы элементы занимали все доступное пространство в одной колонке */
+    /*grid-row: auto; /* Сбрасываем заданные строки, чтобы элементы занимали все доступное пространство в четырех строках */
+  
+  
+  
+
+

@@ -1,11 +1,14 @@
 .intro__list {
-  margin: 33px auto 0 0;
-  font-family: Inter;
+margin-top: 33px;
+margin-bottom: 0;
+max-width: 690px;
+color: #FFF;
+font-family: Inter;
 font-size: 12px;
+font-style: normal;
 font-weight: 700;
-line-height: 18px;
-letter-spacing: 0em;
-text-align: left;
+line-height: 18px; /* 150% */
+flex-shrink: 0;
 
 
 }

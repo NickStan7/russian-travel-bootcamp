@@ -1,25 +1,9 @@
 .lead__image {
 max-width: 100%;
-margin: 64px 0 0 0;
-object-fit: cover;
-flex-shrink: 0;
-align-self: center;
+margin: 64px auto 0 auto;
+
 }
 
 
 
-/*
-@media screen and (max-width: 1024px) {
-  .lead__image {
-    margin: 56px auto 0 auto;
-    max-width: 100%;
-     width: calc(100vw - ((max( 100vw , 768px ) - 768px) * (96 / 256))); /
-  }
-}
 
-@media screen and (max-width: 1024px) {
-  .lead__image {
-    margin-top: 40px;
-
-  }
-}
