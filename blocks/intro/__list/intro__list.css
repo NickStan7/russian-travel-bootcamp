@@ -9,6 +9,8 @@
   font-weight: 700;
   line-height: 18px; /* 150% */
   flex-shrink: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 320px) {
