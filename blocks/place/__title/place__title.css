@@ -24,7 +24,7 @@
 @media screen and (max-width: 595px) {
   .place__title {
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 
