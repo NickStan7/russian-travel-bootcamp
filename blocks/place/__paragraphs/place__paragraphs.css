@@ -1,10 +1,10 @@
-.photo-grid {
+.place__paragraphs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
-  gap: 16px;
-  max-width: 1184px;
-  margin: 0 auto;
-  padding: 92px 48px 0 48px;
-  
+  row-gap: 26px;
 }
 
+@media screen and (max-width: 768px) {
+  .place__paragraphs {
+    row-gap: 25px;
+  }
+}
