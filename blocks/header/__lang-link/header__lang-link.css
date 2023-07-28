@@ -1,4 +1,4 @@
-.header__lang-link_en {
+.header__lang-link {
   text-align: right;
   font-size: 24px;
   font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  .header__lang-link_en {
+  .header__lang-link {
     font-size: 18px;
     line-height: 20px;
   }
