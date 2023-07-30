@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="RU">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия по России</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="../russian-travel-bootcamp/vendor/fonts.css" />
+    <link rel="stylesheet" href="./pages/index.css">
   </head>
   <body>
     <div class="page">
@@ -14,11 +13,15 @@
           class="header__logo"
           alt="Логотип России"
           src="./images/header-logo1.svg"
-        />
-        <div class="header__lang-links">
-          <a class="header__lang-link header__lang-link_ru" href="#">Ru</a>
-          <a class="header__lang-link" href="#">En</a>
-        </div>
+        >
+        <ul class="header__lang-links">
+          <li>
+            <a class="header__lang-link header__lang-link_active" href="#"
+              >Ru</a
+            >
+          </li>
+          <li><a class="header__lang-link" href="#">En</a></li>
+        </ul>
       </header>
 
       <main class="content">
@@ -31,7 +34,7 @@
             class="lead__image"
             alt="изображение полки Плацкарта"
             src="./images/lead-polka.jpg"
-          />
+          >
           <p class="lead__caption">ваша полка — верхняя</p>
         </section>
 
@@ -50,90 +53,104 @@
             вашего отпуска.
           </p>
           <ul class="intro__list">
-            <li>Часовых поясов 11</li>
-            <li>Объектов природного наследия ЮНЕСКО 12</li>
-            <li>Объектов культурного наследия ЮНЕСКО 16</li>
-            <li>Природных заповедников 105</li>
-            <li>Аэропортов 241</li>
+            <li><span class="intro__list-item">Часовых поясов</span> 11</li>
+            <li>
+              <span class="intro__list-item"
+                >Объектов природного наследия ЮНЕСКО</span
+              >
+              12
+            </li>
+            <li>
+              <span class="intro__list-item"
+                >Объектов культурного наследия ЮНЕСКО</span
+              >
+              16
+            </li>
+            <li>
+              <span class="intro__list-item">Природных заповедников</span> 105
+            </li>
+            <li><span class="intro__list-item">Аэропортов</span> 241</li>
           </ul>
         </section>
 
-        <section class="photo-grid">
+        <section aria-label="Изображения пейзажей России" class="photo-grid">
           <img
             src="./images/photo-grid-train.jpg"
             alt="Вид поезда из окна"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-atharva-tulsi.jpg"
             alt="Изображение облаков над горами"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-tuman.jpg"
             alt="Изображение волка в поле"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-sochi.jpg"
             alt="Изображение леса в Сочи"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-arisa.jpg"
             alt="Машина на льду"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-baikal.jpg"
             alt="Берег Байкала"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-elbrus.jpg"
             alt="Фото Эльбруса"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-kondratiev.jpg"
             alt="Кондратьев"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-kamchatka-1.jpg"
             alt="Горы Камчатки"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-kamchatka-2.jpg"
             alt="Снова Горы Камчатки"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-baikal-2.jpg"
             alt="Горы Байкала"
             class="photo-grid__item"
-          />
+          >
           <img
             src="./images/photo-grid-ergaki.jpg"
             alt="Ергаки"
             class="photo-grid__item"
-          />
+          >
         </section>
 
-        <section class="places">
-          <div class="place">
+        <section
+          aria-label="Статьи про лучшие места пейзажей России"
+          class="places"
+        >
+          <article class="place">
             <h2 class="place__title">Куршская коса</h2>
             <img
               src="./images/place-kosa.jpg"
               alt="Куршская коса"
               class="place__image"
-            />
+            >
             <div class="place__website">
               <p class="place__url-heading">URL</p>
               <a href="https://park-kosa.ru" class="place__link" target="_blank"
-                >park-kosa.ru</a
-              >
+                >park-kosa.ru</a>
             </div>
             <div class="place__paragraphs">
               <p class="place__paragraph">
@@ -151,15 +168,15 @@
                 прохладного моря.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="place">
+          <article class="place">
             <h2 class="place__title">Кольский</h2>
             <img
               src="./images/place-kolsky.jpg"
               alt="Кольский"
               class="place__image"
-            />
+            >
             <div class="place__website">
               <p class="place__url-heading">URL</p>
               <a
@@ -185,15 +202,15 @@
                 с билетом в Мурманск.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="place">
+          <article class="place">
             <h2 class="place__title">Алтай</h2>
             <img
               src="./images/place-altai.jpg"
               alt="Алтай"
               class="place__image"
-            />
+            >
             <div class="place__website">
               <p class="place__url-heading">URL</p>
               <a
@@ -219,15 +236,15 @@
                 края.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="place">
+          <article class="place">
             <h2 class="place__title">Зимний Байкал</h2>
             <img
               src="./images/place-winter-baikal.jpg"
               alt="Зимний Байкал"
               class="place__image"
-            />
+            >
             <div class="place__website">
               <p class="place__url-heading">URL</p>
               <a
@@ -252,17 +269,17 @@
                 197.011 км/ч.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="place">
+          <article class="place">
             <h2 class="place__title">Карелия</h2>
             <img
               src="./images/place-karelia.jpg"
               alt="Карелия"
               class="place__image"
-            />
+            >
             <div class="place__website">
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">Url</p>
               <a href="http://vodlozero.ru/" class="place__link" target="_blank"
                 >http://vodlozero.ru/</a
               >
@@ -280,7 +297,7 @@
                 помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
               </p>
             </div>
-          </div>
+          </article>
         </section>
 
         <section class="cover">
@@ -289,7 +306,7 @@
             href="https://stampsy.com/na-elektrichkakh-do-baikala"
             target="_blank"
           >
-            <h3 class="cover__title">До Байкала «на собаках»</h3>
+            <h2 class="cover__title">До Байкала «на собаках»</h2>
             <p class="cover__subtitle">
               По мотивам учебной темы о Транссибе — путешествие от столицы до
               Байкала на электричках.
@@ -299,7 +316,7 @@
       </main>
 
       <footer class="footer">
-        <div class="footer__links">
+        <nav class="footer__links">
           <a href="https://yandex.ru/maps" class="footer__link">Карты</a>
           <a href="https://yandex.ru/pogoda" class="footer__link">Погода</a>
           <a href="https://rasp.yandex.ru" class="footer__link">Расписание</a>
@@ -309,8 +326,8 @@
           <a href="https://travel.yandex.ru" class="footer__link"
             >Путешествия</a
           >
-        </div>
-        <div class="footer__copyright">© 2023. Nikita Stanković</div>
+        </nav>
+        <p class="footer__copyright">© 2023. Nikita Stanković</p>
       </footer>
     </div>
   </body>
