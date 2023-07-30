@@ -1,6 +1,5 @@
 .place__title {
   color: #fff;
-  font-family: Inter;
   font-size: 72px;
   font-style: normal;
   font-weight: 900;
@@ -37,6 +36,5 @@
   .place__title {
     font-size: 32px;
     line-height: 35px; /* 109.375% */
-    margin: 0;
   }
 }

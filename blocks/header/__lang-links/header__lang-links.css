@@ -4,6 +4,8 @@
   margin: 18px 0 6px auto;
   align-items: end;
   gap: 18px;
+  padding-left: 0;
+  list-style: none;
 }
 
 @media screen and (max-width: 320px) {
@@ -11,3 +13,4 @@
     margin: 14px 0 8px auto;
   }
 }
+
